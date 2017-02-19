@@ -3,7 +3,7 @@ import React from 'react'
 import {
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native'
 
 class App extends React.Component {
@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
-  }
+    justifyContent: 'center',
+  },
 })
 
 Exponent.registerRootComponent(App)

@@ -2,18 +2,27 @@ module.exports = {
   'parserOptions': {
     'sourceType': 'module',
     'ecmaFeatures': {
-      'jsx': true
-    }
+      'jsx': true,
+    },
+  },
+  'rules': {
+    'comma-dangle': ['error', {
+      'arrays': 'always-multiline',
+      'objects': 'always-multiline',
+      'imports': 'always-multiline',
+      'exports': 'always-multiline',
+      'functions': 'ignore',
+    }],
   },
   'extends': [
     'standard',
-    'standard-react'
+    'standard-react',
   ],
   'plugins': [
     'promise',
-    'react'
+    'react',
   ],
   'env': {
-    'jest': true
-  }
+    'jest': true,
+  },
 }
