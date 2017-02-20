@@ -12,6 +12,7 @@
     "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "eslint": "^3.15.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-config-standard-react": "^4.2.0",
