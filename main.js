@@ -1,28 +1,22 @@
 import Exponent from 'exponent'
-import React from 'react'
-import {
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native'
 
-class App extends React.Component {
+import React from 'react'
+
+import {
+  NavigationProvider,
+  StackNavigation,
+} from '@exponent/ex-navigation'
+
+import Router from 'Router'
+
+class AppContainer extends React.Component {
   render () {
     return (
-      <View style={styles.container}>
-        <Text>Open up main.js to start working on your app!</Text>
-      </View>
+      <NavigationProvider router={Router}>
+        <StackNavigation initialRoute={Router.getRoute('home')} />
+      </NavigationProvider>
     )
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
-
-Exponent.registerRootComponent(App)
+Exponent.registerRootComponent(AppContainer)
